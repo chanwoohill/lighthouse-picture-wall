@@ -1,8 +1,18 @@
 $font-stack: Verdana, sans-serif;
+$gray: #5F9EA0;
+
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
 
 body {
   font-family: $font-stack;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #team-members {
@@ -13,16 +23,32 @@ body {
     /*border: 1px solid gray;*/
     margin: 10px;
     padding: 6px;
+    transition: 1s linear; 
 
-    img {
-      width: 200px;
-      height: 200px;
+    &:hover {
+      @include transform(rotate(360deg));
     }
 
-    div {
-      .name {
-        text-align: center; 
-      }
+    .headshot {
+      border-radius: 20px;
+      width: 200px;
+      height: 200px;
+      background-size: contain;
+    }
+
+   
+    .name {
+      text-align: center; 
+    }
+  }
+}
+
+@each $name in 'arvinder', 'charlyne', 'david', 'don', 'jeremy', 'khurram',
+'landon', 'michael', 'monica', 'murat', 'rosy', 'sherman', 'sylvia' {
+  ##{$name} {
+    background: url('../team/#{$name}.jpg');
+    &:hover {
+      background: url('../team/#{$name}_filtered.jpg');
     }
   }
 }

@@ -1,6 +1,6 @@
 body {
   font-family: Verdana, sans-serif;
-  font-size: 1.5em; }
+  font-size: 1.3em; }
 
 #team-members {
   clear: both; }
@@ -8,11 +8,85 @@ body {
     float: left;
     /*border: 1px solid gray;*/
     margin: 10px;
-    padding: 6px; }
-    #team-members .member img {
+    padding: 6px;
+    transition: 1s linear; }
+    #team-members .member:hover {
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg); }
+    #team-members .member .headshot {
+      border-radius: 20px;
       width: 200px;
-      height: 200px; }
-    #team-members .member div .name {
+      height: 200px;
+      background-size: contain; }
+    #team-members .member .name {
       text-align: center; }
+
+#arvinder {
+  background: url("../team/arvinder.jpg"); }
+  #arvinder:hover {
+    background: url("../team/arvinder_filtered.jpg"); }
+
+#charlyne {
+  background: url("../team/charlyne.jpg"); }
+  #charlyne:hover {
+    background: url("../team/charlyne_filtered.jpg"); }
+
+#david {
+  background: url("../team/david.jpg"); }
+  #david:hover {
+    background: url("../team/david_filtered.jpg"); }
+
+#don {
+  background: url("../team/don.jpg"); }
+  #don:hover {
+    background: url("../team/don_filtered.jpg"); }
+
+#jeremy {
+  background: url("../team/jeremy.jpg"); }
+  #jeremy:hover {
+    background: url("../team/jeremy_filtered.jpg"); }
+
+#khurram {
+  background: url("../team/khurram.jpg"); }
+  #khurram:hover {
+    background: url("../team/khurram_filtered.jpg"); }
+
+#landon {
+  background: url("../team/landon.jpg"); }
+  #landon:hover {
+    background: url("../team/landon_filtered.jpg"); }
+
+#michael {
+  background: url("../team/michael.jpg"); }
+  #michael:hover {
+    background: url("../team/michael_filtered.jpg"); }
+
+#monica {
+  background: url("../team/monica.jpg"); }
+  #monica:hover {
+    background: url("../team/monica_filtered.jpg"); }
+
+#murat {
+  background: url("../team/murat.jpg"); }
+  #murat:hover {
+    background: url("../team/murat_filtered.jpg"); }
+
+#rosy {
+  background: url("../team/rosy.jpg"); }
+  #rosy:hover {
+    background: url("../team/rosy_filtered.jpg"); }
+
+#sherman {
+  background: url("../team/sherman.jpg"); }
+  #sherman:hover {
+    background: url("../team/sherman_filtered.jpg"); }
+
+#sylvia {
+  background: url("../team/sylvia.jpg"); }
+  #sylvia:hover {
+    background: url("../team/sylvia_filtered.jpg"); }
 
 /*# sourceMappingURL=style.css.map */
